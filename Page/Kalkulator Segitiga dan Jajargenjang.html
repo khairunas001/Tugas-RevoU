@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:3000/index.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga dan Jajargenjang</title>
+    <link rel="stylesheet" href="./Kalkulator Segitiga dan Jajargenjang_files/index.css">
+    <script src="./Kalkulator Segitiga dan Jajargenjang_files/index.js.download" defer=""></script>
+</head>
+<body class="lock">
+<!-- Title -->
+    <h1 class="title">Welcome Katik</h1>
+    <p class="subtitile">
+        Selamat Datang Katik
+    </p>
+    <br>
+    <p class="subtitile">
+        Sebuah websiste sederhana untuk menentukan luas dan keliling bangun datar segitiga dan jajargenjang
+    </p>
+    <!-- header / navbar -->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="http://localhost:3000/index.html#triangle" class="title2">Segitiga</a>
+                <a href="http://localhost:3000/index.html#jajargenjang" class="title2">Jajargenjang</a>
+            </div>
+        </nav>
+    </header>
+    <!-- main page -->
+    <main>
+        <!-- Menghitung luas Segitiga -->
+        <section id="triangle" class="card">
+            <div>
+                <h1 class="subtitile">Luas Segitiga</h1>
+            </div>
+            <img src="./Kalkulator Segitiga dan Jajargenjang_files/segitiga.png" alt="" class="center">
+            <div>
+                <h3 class="subtitile2">Rumus Luas</h3>
+                <p class="subtitile2">l = 1/2 x T x A</p>
+            </div>
+            <div>
+                <br>
+                <p class="subtitile3">dimana :</p>
+                <p class="subtitile3">l=luas</p>
+                <p class="subtitile3">a=alas</p>
+                <p class="subtitile3">t=tinggi</p>
+            </div>
+            <div class="form-hitung">
+                <h3 class="subtitile3">Hitung Luas Segitiga</h3><h3>
+                <div class="form-triangle">
+                    <input type="number" id="alas-triangle" placeholder="Alas Segitiga">
+                    <input type="number" id="high-triangle" placeholder="Tinggi Segitiga">
+                    <div id="Luas_Segitiga_1"></div>
+                    <div id="Luas_Segitiga_2"></div>
+                    <div id="Luas_Segitiga_3"></div>
+                    <button type="submit" class="button-triangle" onclick="calculatetriangle()">Hitung
+                    </button>
+                </div>
+            </h3></div>
+        </section>
+        <!-- Menghitung Keliling Segitiga -->
+        <section id="triangle" class="card">
+            <div>
+                <h1 class="subtitile">Keliling Segitiga</h1>
+            </div>
+            <img src="./Kalkulator Segitiga dan Jajargenjang_files/segitiga.png" alt="" class="center">
+            <div>
+                <h3 class="subtitile2">Rumus Keliling Segitiga</h3>
+                <p class="subtitile2"> K = S + S + S</p>
+            </div>
+            <div>
+                <br>
+                <p class="subtitile3">dimana :</p>
+                <p class="subtitile3"> S = Sisi</p>
+            </div>
+            <div class="form-hitung">
+                <h3 class="subtitile3">Hitung Keliling Segitiga</h3><h3>
+                <div class="form-triangle">
+                    <input type="number" id="sisi_1" placeholder="Sisi 1">
+                    <input type="number" id="sisi_2" placeholder="Sisi 2">
+                    <input type="number" id="sisi_3" placeholder="Sisi 3">
+                    <div id="keliling_segitiga1"></div>
+                    <div id="keliling_segitiga2"></div>
+                    <div id="keliling_segitiga3"></div>
+                    <button type="submit" class="button-triangle" onclick="kelilingtriangle()">Hitung
+                    </button>
+                </div>
+            </h3></div>
+        </section>
+        <!-- Menghitung luas Jajargenjang -->
+        <section id="jajargenjang" class="card">
+            <div>
+                <h1 class="subtitile">Luas Janjargenjang</h1>
+            </div>
+            <img src="./Kalkulator Segitiga dan Jajargenjang_files/jajargenjang.png" alt="" class="center">
+            <div>
+                <h3 class="subtitile2">Rumus Luas</h3>
+                <p class="subtitile2">l = 1/2 x T x A</p>
+            </div>
+            <div>
+                <br>
+                <p class="subtitile3">diimana :</p>
+                <p class="subtitile3">l=luas</p>
+                <p class="subtitile3">a=alas</p>
+                <p class="subtitile3">t=tinggi</p>
+            </div>
+            <div class="form-hitung">
+                <h3 class="subtitile3">Hitung Luas Jajargenjang</h3>
+                <div class="form-triangle">
+                    <input type="number" id="alas-jajargenjang" placeholder="Alas Jajargenjang">
+                    <input type="number" id="high-jajargenjang" placeholder="Tinggi Jajargenjang">
+                    <div id="Luas_Jajargenjang1"></div>
+                    <div id="Luas_Jajargenjang2"></div>
+                    <div id="Luas_Jajargenjang3"></div>
+                    <button type="submit" class="button-triangle" onclick="calculatejajargenjang()">Hitung
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Menghitung Keliling Jajargenjang -->
+        <section id="jajargenjang" class="card">
+            <div>
+                <h1 class="subtitile">Keliling Jajargenjang</h1>
+            </div>
+            <img src="./Kalkulator Segitiga dan Jajargenjang_files/jajargenjang.png" alt="" class="center">
+            <div>
+                <h3 class="subtitile2">Rumus Keliling jajargenjang</h3>
+                <p class="subtitile2"> 2 X a + b</p>
+            </div>
+            <div>
+                <br>
+                <p class="subtitile3">dimana :</p>
+                <p class="subtitile3"> S = Sisi</p>
+            </div>
+            <div class="form-hitung">
+                <h1 class="subtitile3">Hitung Keliling Jajargenjang</h1><h1>
+                <div class="form-triangle">
+                    <input type="number" id="sisi_jj1" placeholder="Sisi 1">
+                    <input type="number" id="sisi_jj2" placeholder="Sisi 2">
+                    <div id="keliling_jajargenjang1"></div>
+                    <div id="keliling_jajargenjang2"></div>
+                    <div id="keliling_jajargenjang3"></div>
+                    <button type="submit" class="button-triangle" onclick="kelilingjajargenjang()">Hitung
+                    </button>
+                </div>
+            </h1></div>
+        </section>
+    </main>
+<!-- footer -->
+    <footer class="footer">
+        <br>
+        Copyright 2023 Khairunas Rhamadhani Wiasanto
+    </footer>
+    <script>
+    function calculatetriangle(){
+        const alas= document.getElementById("alas-triangle").value;
+        const tinggi= document.getElementById("high-triangle").value;
+        const kolom1= document.getElementById("Luas_Segitiga_1");
+        const kolom2= document.getElementById("Luas_Segitiga_2");
+        const kolom3= document.getElementById("Luas_Segitiga_3");
+        const luas= alas*tinggi/2;
+        kolom1.innerHTML= "L = 1/2 x a x t";
+        kolom2.innerHTML= "L = 1/2 x "+alas+" x "+tinggi;
+        kolom3.innerHTML= "L = "+luas +" cm2";
+        alert("Luas Segitiga = "+luas+" cm2");
+        console.log(luas);     
+    }
+    function kelilingtriangle () {
+        const sisi1= document.getElementById("sisi_1").value;
+        const sisi2= document.getElementById("sisi_2").value;
+        const sisi3= document.getElementById("sisi_3").value;
+        const kolom1= document.getElementById("keliling_segitiga1");
+        const kolom2= document.getElementById("keliling_segitiga2");
+        const kolom3= document.getElementById("keliling_segitiga3");
+        const keliling= parseInt(sisi1)+parseInt(sisi2)+parseInt(sisi3);
+        const keliling_segitiga = document.getElementById("keliling_segitiga");
+        kolom1.innerHTML= "K = s1 + s2 + s3";
+        kolom2.innerHTML= "K = "+sisi1+" + "+sisi2+" + "+sisi3;
+        kolom3.innerHTML= "K = "+keliling +" cm";
+        alert(keliling);
+        console.log(keliling);
+    }
+    function calculatejajargenjang(){
+        const alas= document.getElementById("alas-jajargenjang").value;
+        const tinggi= document.getElementById("high-jajargenjang").value;
+        const kolom1= document.getElementById("Luas_Jajargenjang1");
+        const kolom2= document.getElementById("Luas_Jajargenjang2");
+        const kolom3= document.getElementById("Luas_Jajargenjang3");
+        const luas= alas*tinggi;
+        const Luas_Jajargenjang = document.getElementById("Luas_Jajargenjang");
+        kolom1.innerHTML= "L = a x t";
+        kolom2.innerHTML= "L = "+alas+" x "+tinggi;
+        kolom3.innerHTML= "L = "+luas +" cm2";
+        alert("Luas Jajargenjang = "+luas+" cm2");
+        console.log(luas);
+    }
+    function kelilingjajargenjang () {
+        const sisi1= document.getElementById("sisi_jj1").value;
+        const sisi2= document.getElementById("sisi_jj2").value;
+        const kolom1= document.getElementById("keliling_jajargenjang1");
+        const kolom2= document.getElementById("keliling_jajargenjang2");
+        const kolom3= document.getElementById("keliling_jajargenjang3");
+        const keliling= (Number(sisi1)+Number(sisi2))*2;
+        const keliling_jajargenjang = document.getElementById("keliling_jajargenjang");
+        kolom1.innerHTML= "K = 2 x (s1 + s2)";
+        kolom2.innerHTML= "K = 2 x ("+sisi1+" + "+sisi2+")";
+        kolom3.innerHTML= "K = "+keliling +" cm";
+        alert(keliling);
+        console.log(keliling);
+    }
+    </script>
+
+</body></html>
